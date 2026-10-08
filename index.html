@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Subsidios — 2BGU — Evaluación ADA</title>
+<title>Subvenciones — 2BGU — Evaluación ADA</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231B2A5A'/><text x='50' y='70' font-size='55' text-anchor='middle' fill='%23D9B14B' font-family='Georgia'>E</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -238,17 +238,17 @@ body::before{content:"";position:fixed;inset:0;background-image:url("data:image/
     <div class="brand-mark">E</div>
     <div class="brand-text">
       <div class="brand-text t1">Economía — 2BGU</div>
-      <div class="brand-text t2">Subsidios</div>
+      <div class="brand-text t2">Subvenciones</div>
     </div>
   </div>
-  <div class="brand-right">Microeconomía · Unidad 3<br><strong>ADA — Subsidios y subvenciones</strong></div>
+  <div class="brand-right">Microeconomía · Unidad 3<br><strong>ADA — Subvenciones</strong></div>
 </div>
 
 <!-- ═══════ SCREEN: INTRO ═══════ -->
 <section id="welcome-screen" class="screen active">
 <div class="welcome-card">
   <div class="eyebrow"><i class="fa-solid fa-shield-halved"></i> Evaluación formativa</div>
-  <h1 class="welcome-title">Subsidios <em>y subvenciones</em></h1>
+  <h1 class="welcome-title">Subvenciones</h1>
   <p class="welcome-sub">Preguntas con cadena causal estilo examinador IB, análisis del diagrama de subsidio doméstico (precio al consumidor, precio al productor, brecha de la subvención y gasto fiscal), incidencia según elasticidades, efectos sobre el bienestar y casos de noticias reales sobre subsidios a combustibles en Ecuador.</p>
   <div class="skills-box">
     <div class="skills-title"><i class="fa-solid fa-brain"></i> Competencias evaluadas</div>
@@ -1268,7 +1268,7 @@ function printPDF(){
   doc.text('Informe de Retroalimentación', ML, 11);
   doc.setFontSize(9); doc.setFont('helvetica','normal');
   doc.setTextColor(...C.gold);
-  doc.text('ADA — Subsidios · 2026 – 2027', ML, 17);
+  doc.text('ADA — Subvenciones · 2026 – 2027', ML, 17);
   doc.setFontSize(8);
   doc.setTextColor(200,210,230);
   doc.text('Economía · 2BGU', ML, 23);
@@ -1284,7 +1284,7 @@ function printPDF(){
   doc.setTextColor(255,255,255);
   const subH = 9;
   doc.roundedRect(ML, y-2, CW, subH, 2, 2, 'F');
-  doc.text('Resultado de la Evaluación — Subsidios', ML+5, y+4);
+  doc.text('Resultado de la Evaluación — Subvenciones', ML+5, y+4);
   y += subH + 4;
 
   // Metadata table (3 columns)
@@ -1481,7 +1481,7 @@ function printPDF(){
   doc.setTextColor(100,100,100);
   doc.text('Estudiante 2BGU', ML+sigW+20+sigW/2, y+8, {align:'center'});
 
-  doc.save('Informe_Subsidios_2BGU_' + name.replace(/\s+/g,'_') + '.pdf');
+  doc.save('Informe_Subvenciones_2BGU_' + name.replace(/\s+/g,'_') + '.pdf');
   } catch(e){ console.error('printPDF error:', e); alertModal('Error al generar PDF: ' + e.message); }
 }
 
@@ -1571,7 +1571,7 @@ function generateStudentPDF(row){
   doc.setFontSize(15);doc.setFont('helvetica','bold');doc.setTextColor(255,255,255);
   doc.text('Informe de Retroalimentación',ML,11);
   doc.setFontSize(9);doc.setFont('helvetica','normal');doc.setTextColor(...C.gold);
-  doc.text('ADA — Subsidios · 2026 – 2027',ML,17);
+  doc.text('ADA — Subvenciones · 2026 – 2027',ML,17);
   doc.setFontSize(8);doc.setTextColor(200,210,230);
   doc.text('Economía · 2BGU',ML,23);
   doc.setDrawColor(...C.gold);doc.setLineWidth(1.5);doc.line(0,26,W,26);
@@ -1580,7 +1580,7 @@ function generateStudentPDF(row){
   doc.setFillColor(...C.navy);
   doc.roundedRect(ML,y-2,CW,9,2,2,'F');
   doc.setFontSize(9.5);doc.setFont('helvetica','bold');doc.setTextColor(255,255,255);
-  doc.text('Resultado de la Evaluación — Subsidios',ML+5,y+4);
+  doc.text('Resultado de la Evaluación — Subvenciones',ML+5,y+4);
   y+=13;
 
   const colW=CW/3;
@@ -1717,7 +1717,7 @@ function generateStudentPDF(row){
   doc.setFont('helvetica','normal');doc.setFontSize(7);doc.setTextColor(100,100,100);
   doc.text('Estudiante 2BGU',ML+sigW+20+sigW/2,y+8,{align:'center'});
 
-  doc.save('Informe_Subsidios_2BGU_'+name.trim().replace(/\s+/g,'_')+'.pdf');
+  doc.save('Informe_Subvenciones_2BGU_'+name.trim().replace(/\s+/g,'_')+'.pdf');
   } catch(e){ console.error('generateStudentPDF error:',e);alertModal('Error al generar PDF: '+e.message); }
 }
 
