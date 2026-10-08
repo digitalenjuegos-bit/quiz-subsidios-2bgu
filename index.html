@@ -1752,6 +1752,9 @@ function loadTeacher(){
     .then(rows=>{
       currentTeacherRows = rows;
       renderTeacherTable(rows);
+      // Reaplicar el filtro activo si el docente ya está filtrando
+      const f = document.getElementById('teacherFilter');
+      if(f && f.value.trim()) filterTeacher();
     })
     .catch(()=>{
       currentTeacherRows = [];
